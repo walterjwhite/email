@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.walterjwhite.modules.email</groupId>
+		<artifactId>modules</artifactId>
+		<version>0.0.15-SNAPSHOT</version>
+	</parent>
+
+	<groupId>com.walterjwhite.modules.email.modules</groupId>
+	<artifactId>javamail</artifactId>
+	<packaging>jar</packaging>
+	<name>email - modules - javamail</name>
+	<description>
+		email modules - javamail
+	</description>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.walterjwhite.infrastructure.dependencies</groupId>
+			<artifactId>javamail</artifactId>
+			<version>0.0.15-SNAPSHOT</version>
+			<type>pom</type>
+		</dependency>
+
+		<dependency>
+			<groupId>com.walterjwhite.modules.file.providers</groupId>
+			<artifactId>local</artifactId>
+			<version>0.0.15-SNAPSHOT</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.walterjwhite.modules.encryption</groupId>
+			<artifactId>impl</artifactId>
+			<version>0.0.15-SNAPSHOT</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.walterjwhite.modules.compression.modules</groupId>
+			<artifactId>xz</artifactId>
+			<version>0.0.15-SNAPSHOT</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.walterjwhite.infrastructure.google-guice.modules</groupId>
+			<artifactId>property-test</artifactId>
+			<version>0.0.15-SNAPSHOT</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.walterjwhite.infrastructure.dependencies</groupId>
+			<artifactId>hikari-jdbc-connection-pool</artifactId>
+			<version>0.0.15-SNAPSHOT</version>
+			<scope>test</scope>
+			<type>pom</type>
+		</dependency>
+
+		<dependency>
+			<groupId>com.walterjwhite.infrastructure.dependencies</groupId>
+			<artifactId>hibernate-hikari</artifactId>
+			<version>0.0.15-SNAPSHOT</version>
+			<scope>test</scope>
+			<type>pom</type>
+		</dependency>
+
+		<dependency>
+			<groupId>com.walterjwhite.infrastructure.dependencies</groupId>
+			<artifactId>p6spy</artifactId>
+			<version>0.0.15-SNAPSHOT</version>
+			<scope>test</scope>
+			<type>pom</type>
+		</dependency>
+
+		<dependency>
+			<groupId>com.walterjwhite.infrastructure.dependencies</groupId>
+			<artifactId>h2</artifactId>
+			<version>0.0.15-SNAPSHOT</version>
+			<scope>test</scope>
+			<type>pom</type>
+		</dependency>
+	</dependencies>
+</project>

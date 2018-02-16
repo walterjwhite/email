@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.walterjwhite.modules</groupId>
+		<artifactId>email</artifactId>
+		<version>0.0.15-SNAPSHOT</version>
+	</parent>
+
+	<groupId>com.walterjwhite.modules.email</groupId>
+	<artifactId>impl</artifactId>
+	<packaging>jar</packaging>
+	<name>email - impl</name>
+	<description>
+		email impl
+	</description>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.walterjwhite.modules.email.api</groupId>
+			<artifactId>service</artifactId>
+			<version>0.0.15-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.walterjwhite.modules.file.api</groupId>
+			<artifactId>service</artifactId>
+			<version>0.0.15-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.walterjwhite.modules.compression.api</groupId>
+			<artifactId>service</artifactId>
+			<version>0.0.15-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.walterjwhite.modules.queue.api</groupId>
+			<artifactId>service</artifactId>
+			<version>0.0.15-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.walterjwhite.modules.queue</groupId>
+			<artifactId>impl</artifactId>
+			<version>0.0.15-SNAPSHOT</version>
+		</dependency>
+
+		<!--
+		<dependency>
+			<groupId>com.walterjwhite.file</groupId>
+			<artifactId>impl</artifactId>
+			<version>0.0.15-SNAPSHOT</version>
+		</dependency>
+		-->
+
+		<dependency>
+			<groupId>com.walterjwhite.infrastructure.dependencies</groupId>
+			<artifactId>google-guice-persist</artifactId>
+			<version>0.0.15-SNAPSHOT</version>
+			<type>pom</type>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.walterjwhite.infrastructure.dependencies</groupId>
+			<artifactId>h2</artifactId>
+			<version>0.0.15-SNAPSHOT</version>
+			<type>pom</type>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.walterjwhite.modules.file.providers</groupId>
+			<artifactId>local</artifactId>
+			<version>0.0.15-SNAPSHOT</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.walterjwhite.modules.encryption</groupId>
+			<artifactId>impl</artifactId>
+			<version>0.0.15-SNAPSHOT</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.walterjwhite.modules.compression.modules</groupId>
+			<artifactId>xz</artifactId>
+			<version>0.0.15-SNAPSHOT</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.walterjwhite.infrastructure.google-guice</groupId>
+			<artifactId>core</artifactId>
+			<version>0.0.15-SNAPSHOT</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.walterjwhite.infrastructure.dependencies</groupId>
+			<artifactId>javamail</artifactId>
+			<version>0.0.15-SNAPSHOT</version>
+			<type>pom</type>
+		</dependency>
+
+		<dependency>
+			<groupId>com.walterjwhite.infrastructure.dependencies</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>0.0.15-SNAPSHOT</version>
+			<type>pom</type>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.hadoop</groupId>
+			<artifactId>hadoop-core</artifactId>
+			<version>RELEASE</version>
+		</dependency>
+	</dependencies>
+</project>

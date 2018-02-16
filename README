@@ -1,0 +1,20 @@
+@TODO:
+1. support sending an SMS message
+   possibly use email to SMS gateway
+   integrate with Google Voice
+
+Exchange email / calendaring services:
+
+1. provide ability to read/write email
+   a. backend service
+   b. frontend UI
+2. provide ability to create/update/cancel calendar events
+   a. backend service
+   b. frontend UI
+
+3. parse email into data model
+   a. message body
+   b. attachments
+
+4. fire events for data model (created / updated / deleted)
+5. observe events and update indexes (for search)

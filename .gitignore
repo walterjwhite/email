@@ -1,0 +1,8 @@
+.idea
+*.iml
+*.versionsBackup
+target
+
+db
+spy.log
+
