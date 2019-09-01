@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.walterjwhite.java.modules.email.modules</groupId>
+    <artifactId>organization</artifactId>
+    <version>0.0.15-SNAPSHOT</version>
+  </parent>
+  <groupId>com.walterjwhite.java.modules.email.modules.organzation</groupId>
+  <artifactId>guice-exchange</artifactId>
+  <packaging>jar</packaging>
+  <name>email - modules - organization - guice-exchange</name>
+  <dependencies>
+    <dependency>
+      <groupId>com.walterjwhite.java.modules.email.modules.organzation.providers</groupId>
+      <artifactId>guice</artifactId>
+      <version>0.0.15-SNAPSHOT</version>
+    </dependency>
+    <!-- Plugins -->
+    <dependency>
+      <groupId>com.walterjwhite.java.modules.email.modules.organization.plugins</groupId>
+      <artifactId>mark-as-read</artifactId>
+      <version>0.0.15-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>com.walterjwhite.java.modules.email.modules.organization.plugins</groupId>
+      <artifactId>move</artifactId>
+      <version>0.0.15-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>com.walterjwhite.java.modules.email.modules.organization.plugins</groupId>
+      <artifactId>reply</artifactId>
+      <version>0.0.15-SNAPSHOT</version>
+    </dependency>
+    <!--  Guice CLI -->
+    <dependency>
+      <groupId>com.walterjwhite.java.configuration.cli</groupId>
+      <artifactId>guice</artifactId>
+      <version>0.0.15-SNAPSHOT</version>
+      <type>pom</type>
+    </dependency>
+  </dependencies>
+  <properties>
+    <application.environment>Development</application.environment>
+  </properties>
+</project>

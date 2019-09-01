@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0                       http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.walterjwhite.java.modules.email</groupId>
+    <artifactId>modules</artifactId>
+    <version>0.0.15-SNAPSHOT</version>
+  </parent>
+  <groupId>com.walterjwhite.java.modules.email.modules</groupId>
+  <artifactId>email-jpa-repository</artifactId>
+  <version>0.0.15-SNAPSHOT</version>
+  <packaging>jar</packaging>
+  <name>email - modules - email-jpa-repository</name>
+  <dependencies>
+    <dependency>
+      <groupId>com.walterjwhite.java.modules.email.modules.javamail</groupId>
+      <artifactId>impl</artifactId>
+      <version>0.0.15-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>com.walterjwhite.java.infrastructure.datastore.api</groupId>
+      <artifactId>repository</artifactId>
+      <version>0.0.15-SNAPSHOT</version>
+    </dependency>
+    <!--<dependency>-->
+    <!--<groupId>com.walterjwhite.java.infrastructure.datastore.providers.jdo.modules</groupId>-->
+    <!--<artifactId>criteria</artifactId>-->
+    <!--<version>0.0.15-SNAPSHOT</version>-->
+    <!--</dependency>-->
+  </dependencies>
+</project>

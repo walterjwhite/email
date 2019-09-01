@@ -1,0 +1,15 @@
+group = 'com.walterjwhite.modules.email.modules'
+description = 'email - modules - javamail'
+dependencies {
+  compile project(':infrastructure:dependencies:javamail')
+  compile project(':infrastructure:datastore:modules:provider')
+  testCompile project(':infrastructure:datastore:modules:download:providers:local')
+  testCompile project(':infrastructure:datastore:modules:encryption:impl')
+  testCompile project(':infrastructure:datastore:modules:xz')
+  testCompile project(':infrastructure:datastore:modules:property-test')
+  testCompile project(':infrastructure:dependencies:slf4j-simple')
+  testCompile project(':infrastructure:dependencies:hikari-jdbc-connection-pool')
+  testCompile project(':infrastructure:dependencies:hibernate-hikari')
+  testCompile project(':infrastructure:dependencies:p6spy')
+  testCompile project(':infrastructure:dependencies:h2')
+}

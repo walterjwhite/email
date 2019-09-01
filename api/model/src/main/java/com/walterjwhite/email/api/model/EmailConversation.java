@@ -4,12 +4,19 @@ import com.walterjwhite.datastore.api.model.entity.AbstractEntity;
 import java.util.ArrayList;
 import java.util.List;
 import javax.persistence.*;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.ToString;
 
+@Data
+@ToString(doNotUseGetters = true)
+// @PersistenceCapable
 @Entity
 public class EmailConversation extends AbstractEntity {
   @Column(unique = true, nullable = false)
   protected String uuid;
 
+  @EqualsAndHashCode.Exclude
   @OneToMany(cascade = CascadeType.ALL, mappedBy = "emailConversation")
   protected List<Email> emails;
 
@@ -21,37 +28,5 @@ public class EmailConversation extends AbstractEntity {
   public EmailConversation() {
     super();
     this.emails = new ArrayList<>();
-  }
-
-  public String getUuid() {
-    return uuid;
-  }
-
-  public void setUuid(String uuid) {
-    this.uuid = uuid;
-  }
-
-  public List<Email> getEmails() {
-    return emails;
-  }
-
-  public void setEmails(List<Email> emails) {
-    this.emails.clear();
-    this.emails.addAll(emails);
-  }
-
-  @Override
-  public boolean equals(Object o) {
-    if (this == o) return true;
-    if (o == null || getClass() != o.getClass()) return false;
-
-    EmailConversation that = (EmailConversation) o;
-
-    return uuid != null ? uuid.equals(that.uuid) : that.uuid == null;
-  }
-
-  @Override
-  public int hashCode() {
-    return uuid != null ? uuid.hashCode() : 0;
   }
 }

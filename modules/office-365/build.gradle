@@ -1,0 +1,10 @@
+group = 'com.walterjwhite.modules.email.modules'
+description = 'email - modules - exchange'
+dependencies {
+  compile project(':infrastructure:datastore:api:model')
+  compile project(':infrastructure:dependencies:ews-java-api')
+  compile project(':infrastructure:dependencies:google-guice:core')
+  compile project(':infrastructure:datastore:modules:property')
+  compile project(':infrastructure:datastore:modules:encryption')
+  compile project(':infrastructure:datastore:api:service')
+}

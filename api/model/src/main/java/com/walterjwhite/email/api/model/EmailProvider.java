@@ -5,47 +5,32 @@ import com.walterjwhite.email.api.enumeration.EmailProviderType;
 import java.util.HashMap;
 import java.util.Map;
 import javax.persistence.*;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
 
 /** Google, Exchange ... */
+@NoArgsConstructor
+@Getter
+@Setter
+@ToString(doNotUseGetters = true, callSuper = true)
+// @PersistenceCapable
 @Entity
 public class EmailProvider extends AbstractNamedEntity {
   @Enumerated(EnumType.STRING)
-  @Column
+  @Column(nullable = false)
   protected EmailProviderType type;
 
   // if this works, great, otherwise, setup a key-value pair entity
   @ElementCollection @CollectionTable @MapKeyColumn @Column
   protected Map<String, String> settings = new HashMap<>();
 
-  //    properties.setProperty("mail.smtp.host", "");
-
-  //    properties.put("mail.smtp.host", "smtp.gmail.com");
-  //    properties.put("mail.smtp.socketFactory.port", "465");
-  //    properties.put("mail.smtp.socketFactory.class", "javax.net.ssl.SSLSocketFactory");
-  //    properties.put("mail.smtp.auth", "true");
-  //    properties.put("mail.smtp.port", "465");
-
   public EmailProvider(
       String name, String description, EmailProviderType type, Map<String, String> settings) {
     super(name, description);
     this.type = type;
 
-    this.settings.putAll(settings);
-  }
-
-  public EmailProviderType getType() {
-    return type;
-  }
-
-  public void setType(EmailProviderType type) {
-    this.type = type;
-  }
-
-  public Map<String, String> getSettings() {
-    return settings;
-  }
-
-  public void setSettings(Map<String, String> settings) {
-    this.settings = settings;
+    if (settings != null && !settings.isEmpty()) this.settings.putAll(settings);
   }
 }

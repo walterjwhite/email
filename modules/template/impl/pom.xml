@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.walterjwhite.java.modules.email.modules</groupId>
+    <artifactId>template</artifactId>
+    <version>0.0.15-SNAPSHOT</version>
+  </parent>
+  <groupId>com.walterjwhite.java.modules.email.modules.template</groupId>
+  <artifactId>impl</artifactId>
+  <packaging>jar</packaging>
+  <name>email - modules - template - impl</name>
+  <description>email modules - template - impl</description>
+  <dependencies>
+    <dependency>
+      <groupId>com.walterjwhite.java.modules.template.api</groupId>
+      <artifactId>service</artifactId>
+      <version>0.0.15-SNAPSHOT</version>
+    </dependency>
+    <!--<dependency>-->
+    <!--<groupId>com.walterjwhite.java.infrastructure.google-guice.modules</groupId>-->
+    <!--<artifactId>property-test</artifactId>-->
+    <!--<version>0.0.15-SNAPSHOT</version>-->
+    <!--<scope>test</scope>-->
+    <!--</dependency>-->
+    <dependency>
+      <groupId>com.walterjwhite.java.modules.template.providers</groupId>
+      <artifactId>string-template</artifactId>
+      <version>0.0.15-SNAPSHOT</version>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.walterjwhite.java.dependencies</groupId>
+      <artifactId>h2</artifactId>
+      <version>0.0.15-SNAPSHOT</version>
+      <type>pom</type>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.walterjwhite.java.dependencies</groupId>
+      <artifactId>postgresql</artifactId>
+      <version>0.0.15-SNAPSHOT</version>
+      <type>pom</type>
+    </dependency>
+    <dependency>
+      <groupId>com.walterjwhite.java.dependencies</groupId>
+      <artifactId>p6spy</artifactId>
+      <version>0.0.15-SNAPSHOT</version>
+      <type>pom</type>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.walterjwhite.java.dependencies</groupId>
+      <artifactId>hikari-jdbc-connection-pool</artifactId>
+      <version>0.0.15-SNAPSHOT</version>
+      <type>pom</type>
+      <scope>test</scope>
+    </dependency>
+    <dependency>
+      <groupId>com.walterjwhite.java.dependencies</groupId>
+      <artifactId>hibernate-hikari</artifactId>
+      <version>0.0.15-SNAPSHOT</version>
+      <type>pom</type>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>

@@ -1,0 +1,5 @@
+group = 'com.walterjwhite.modules.email.modules'
+description = 'email - modules - javamail-async'
+dependencies {
+  compile project(':infrastructure:datastore:modules:javamail')
+}

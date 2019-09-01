@@ -1,44 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-	<modelVersion>4.0.0</modelVersion>
-	<parent>
-		<groupId>com.walterjwhite.modules.email</groupId>
-		<artifactId>modules</artifactId>
-		<version>0.0.15-SNAPSHOT</version>
-	</parent>
-
-	<groupId>com.walterjwhite.modules.email.modules</groupId>
-	<artifactId>exchange</artifactId>
-	<packaging>jar</packaging>
-	<name>email - modules - exchange</name>
-	<description>
-		email modules - exchange
-	</description>
-
-	<dependencies>
-		<dependency>
-			<groupId>com.walterjwhite.modules</groupId>
-			<artifactId>exchange</artifactId>
-			<version>0.0.15-SNAPSHOT</version>
-		</dependency>
-
-		<dependency>
-			<groupId>com.walterjwhite.infrastructure.dependencies</groupId>
-			<artifactId>commons-io</artifactId>
-			<version>0.0.15-SNAPSHOT</version>
-			<type>pom</type>
-		</dependency>
-
-		<dependency>
-			<groupId>com.walterjwhite.modules.encryption.api</groupId>
-			<artifactId>service</artifactId>
-			<version>0.0.15-SNAPSHOT</version>
-		</dependency>
-
-		<dependency>
-			<groupId>com.walterjwhite.modules.file.api</groupId>
-			<artifactId>service</artifactId>
-			<version>0.0.15-SNAPSHOT</version>
-		</dependency>
-	</dependencies>
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.walterjwhite.java.modules.email</groupId>
+    <artifactId>modules</artifactId>
+    <version>0.0.15-SNAPSHOT</version>
+  </parent>
+  <groupId>com.walterjwhite.java.modules.email.modules</groupId>
+  <artifactId>exchange</artifactId>
+  <packaging>pom</packaging>
+  <name>email - modules - exchange</name>
+  <description>email modules - exchange</description>
+  <modules>
+    <module>impl</module>
+    <module>providers</module>
+  </modules>
 </project>
