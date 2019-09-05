@@ -9,10 +9,12 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
+@ToString(doNotUseGetters = true)
 public class EmailMatcherRule extends AbstractEntity implements Comparable<EmailMatcherRule> {
   protected String name;
   @EqualsAndHashCode.Exclude protected int ordering;

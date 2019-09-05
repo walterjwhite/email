@@ -3,6 +3,7 @@ package com.walterjwhite.email.organization.api.configuration.rule;
 import com.walterjwhite.email.api.model.Email;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.ToString;
 
 // @TODO: reevaluate which fields are included for .equals and .hashCode
 // was originally email message field, but that is rather limiting
@@ -11,6 +12,7 @@ import lombok.EqualsAndHashCode;
 // read
 // @JsonTypeInfo(use = JsonTypeInfo.Id.CLASS, include = JsonTypeInfo.As.PROPERTY, property="@class")
 @Data
+@ToString(doNotUseGetters = true)
 public abstract class AbstractRule {
 
   @EqualsAndHashCode.Exclude protected boolean invert;

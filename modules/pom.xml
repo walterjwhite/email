@@ -4,11 +4,11 @@
   <parent>
     <groupId>com.walterjwhite.java.modules</groupId>
     <artifactId>email</artifactId>
-    <version>0.0.15-SNAPSHOT</version>
+    <version>0.0.17-SNAPSHOT</version>
   </parent>
   <groupId>com.walterjwhite.java.modules.email</groupId>
   <artifactId>modules</artifactId>
-  <version>0.0.15-SNAPSHOT</version>
+  <version>0.0.17-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>email - modules</name>
   <description>email modules</description>
@@ -23,12 +23,12 @@
     <dependency>
       <groupId>com.walterjwhite.java.modules.email.api</groupId>
       <artifactId>service</artifactId>
-      <version>0.0.15-SNAPSHOT</version>
+      <version>0.0.17-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>com.walterjwhite.java.modules.email</groupId>
       <artifactId>impl</artifactId>
-      <version>0.0.15-SNAPSHOT</version>
+      <version>0.0.17-SNAPSHOT</version>
       <!--<scope>runtime</scope>-->
     </dependency>
   </dependencies>

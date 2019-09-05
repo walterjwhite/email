@@ -4,7 +4,7 @@
   <parent>
     <groupId>com.walterjwhite.java.modules.email.modules</groupId>
     <artifactId>javamail</artifactId>
-    <version>0.0.15-SNAPSHOT</version>
+    <version>0.0.17-SNAPSHOT</version>
   </parent>
   <groupId>com.walterjwhite.java.modules.email.modules.javamail</groupId>
   <artifactId>providers</artifactId>
@@ -15,7 +15,7 @@
     <dependency>
       <groupId>com.walterjwhite.java.modules.email.modules.javamail</groupId>
       <artifactId>impl</artifactId>
-      <version>0.0.15-SNAPSHOT</version>
+      <version>0.0.17-SNAPSHOT</version>
     </dependency>
   </dependencies>
   <modules>

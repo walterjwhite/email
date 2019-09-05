@@ -5,8 +5,10 @@ import java.util.HashSet;
 import java.util.Set;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.ToString;
 
 @Data
+@ToString(doNotUseGetters = true)
 public class GroupRule extends AbstractRule {
   protected Set<AbstractRule> rules = new HashSet<>();
   @EqualsAndHashCode.Exclude protected CriteriaType criteriaType;

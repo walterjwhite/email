@@ -17,8 +17,10 @@ import java.util.Set;
 import javax.inject.Inject;
 import lombok.Data;
 import lombok.RequiredArgsConstructor;
+import lombok.ToString;
 
 @Data
+@ToString(doNotUseGetters = true)
 @RequiredArgsConstructor(onConstructor_ = {@Inject})
 public class ReplyAction implements Action {
   protected final EmailSendService emailSendService;
