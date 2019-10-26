@@ -22,7 +22,7 @@ public class JavaMailNewMessageCountAdapter extends MessageCountAdapter {
       try {
         javaMailEmailMessageReadService.store(null, message);
       } catch (Exception e) {
-        throw (new RuntimeException("Error processing message", e));
+        throw new RuntimeException("Error processing message", e);
       }
     }
   }

@@ -25,7 +25,7 @@
 //    try {
 //      javaMailEmailSendService.send(email);
 //    } catch (Exception e) {
-//      throw (new RuntimeException("Error sending email", e));
+//      throw new RuntimeException("Error sending email", e));
 //    }
 //  }
 // }

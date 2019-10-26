@@ -12,7 +12,7 @@ public class StoreUtils {
     try {
       return JavaMailUtils.getStore(JavaMailUtils.getSession(privateEmailAccount));
     } catch (MessagingException e) {
-      throw (new RuntimeException("Error setting up store", e));
+      throw new RuntimeException("Error setting up store", e);
     }
   }
 }

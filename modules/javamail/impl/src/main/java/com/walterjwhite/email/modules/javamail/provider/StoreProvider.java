@@ -17,7 +17,7 @@ public class StoreProvider implements Provider<Store> {
     try {
       return JavaMailUtils.getStore(session);
     } catch (MessagingException e) {
-      throw (new RuntimeException("Error getting Store", e));
+      throw new RuntimeException("Error getting Store", e);
     }
   }
 }

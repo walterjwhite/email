@@ -96,7 +96,7 @@ public class JavaMailEmailSendService implements ExternalEmailSendService {
     else if (EmailRecipientType.Bcc.equals(emailRecipientType))
       message.addRecipient(
           MimeMessage.RecipientType.TO, new InternetAddress(emailAccount.getName()));
-    else throw (new UnsupportedOperationException("recipient type is unknown:"));
+    else throw new UnsupportedOperationException("recipient type is unknown:");
   }
 
   //  protected int addAttachments(Multipart multipart, Email email) throws MessagingException {

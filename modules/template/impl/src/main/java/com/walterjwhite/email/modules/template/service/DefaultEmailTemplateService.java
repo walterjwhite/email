@@ -122,7 +122,7 @@ public class DefaultEmailTemplateService implements EmailTemplateService {
     //      return emailRecipientProvider.getRecipients(referenceData);
     return null;
     //    } catch (ClassNotFoundException e) {
-    //      throw (new RuntimeException(e));
+    //      throw new RuntimeException(e));
     //    }
   }
 }

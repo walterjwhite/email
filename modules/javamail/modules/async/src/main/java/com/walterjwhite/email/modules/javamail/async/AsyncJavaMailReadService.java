@@ -22,7 +22,7 @@ public class AsyncJavaMailReadService implements EmailReadService, StartupAware,
 
   @Override
   public void read(PrivateEmailAccount privateEmailAccount) {
-    throw (new UnsupportedOperationException());
+    throw new UnsupportedOperationException();
   }
 
   @Override
