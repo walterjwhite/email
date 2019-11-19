@@ -14,6 +14,7 @@
   <modules>
     <module>api</module>
     <module>impl</module>
+    <module>modules</module>
     <module>plugins</module>
     <module>providers</module>
     <!-- fully ready-to-run module -->

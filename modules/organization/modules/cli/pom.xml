@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.walterjwhite.java.modules.email.modules.organization</groupId>
+    <artifactId>modules</artifactId>
+    <version>0.0.17-SNAPSHOT</version>
+  </parent>
+  <groupId>com.walterjwhite.java.modules.email.modules.organization.modules</groupId>
+  <artifactId>cli</artifactId>
+  <packaging>pom</packaging>
+  <name>email - modules - organization - modules - cli</name>
+  <description>email modules - organization - modules - cli</description>
+  <modules>
+    <module>impl</module>
+    <module>providers</module>
+  </modules>
+  <dependencies>
+    <dependency>
+      <groupId>com.walterjwhite.java.infrastructure.inject.modules.cli</groupId>
+      <artifactId>api</artifactId>
+      <version>0.0.17-SNAPSHOT</version>
+    </dependency>
+  </dependencies>
+</project>

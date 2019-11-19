@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.walterjwhite.java.modules.email.modules.organization.modules.cli</groupId>
+    <artifactId>providers</artifactId>
+    <version>0.0.17-SNAPSHOT</version>
+  </parent>
+  <groupId>com.walterjwhite.java.modules.email.modules.organization.modules.cli.providers</groupId>
+  <artifactId>guice</artifactId>
+  <packaging>jar</packaging>
+  <name>email - modules - organization - modules - cli - providers - guice</name>
+  <description>email modules - organization - modules - cli - providers - guice</description>
+  <dependencies>
+    <dependency>
+      <groupId>com.walterjwhite.java.configuration.cli</groupId>
+      <artifactId>guice</artifactId>
+      <version>0.0.17-SNAPSHOT</version>
+      <type>pom</type>
+    </dependency>
+    <dependency>
+      <groupId>com.walterjwhite.java.infrastructure.property.modules</groupId>
+      <artifactId>default</artifactId>
+      <version>0.0.17-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>com.walterjwhite.java.infrastructure.property.modules</groupId>
+      <artifactId>environment</artifactId>
+      <version>0.0.17-SNAPSHOT</version>
+    </dependency>
+    <!--    <dependency>-->
+    <!--      <groupId>com.walterjwhite.java.infrastructure.property.modules</groupId>-->
+    <!--      <artifactId>system</artifactId>-->
+    <!--      <version>0.0.15-SNAPSHOT</version>-->
+    <!--    </dependency>-->
+    <dependency>
+      <groupId>com.walterjwhite.java.modules.email.modules.javamail.providers</groupId>
+      <artifactId>guice</artifactId>
+      <version>0.0.17-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>com.walterjwhite.java.modules.file.providers.local.providers</groupId>
+      <artifactId>guice</artifactId>
+      <version>0.0.17-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>com.walterjwhite.java.infrastructure.datastore.providers.jpa.providers</groupId>
+      <artifactId>google-guice-persist-criteria-builder</artifactId>
+      <version>0.0.17-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>com.walterjwhite.java.modules.encryption.providers</groupId>
+      <artifactId>guice</artifactId>
+      <version>0.0.17-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>com.walterjwhite.java.modules.compression.modules.xz.providers</groupId>
+      <artifactId>guice</artifactId>
+      <version>0.0.17-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>com.walterjwhite.java.modules.email.modules.organzation.providers</groupId>
+      <artifactId>guice</artifactId>
+      <version>0.0.17-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>com.walterjwhite.java.modules.serialization.modules.snakeyaml.providers</groupId>
+      <artifactId>guice</artifactId>
+      <version>0.0.17-SNAPSHOT</version>
+    </dependency>
+    <dependency>
+      <groupId>com.walterjwhite.java.modules.email.modules.organization.modules.cli</groupId>
+      <artifactId>impl</artifactId>
+      <version>0.0.17-SNAPSHOT</version>
+      <scope>compile</scope>
+    </dependency>
+  </dependencies>
+  <properties>
+    <application.environment>Development</application.environment>
+  </properties>
+</project>

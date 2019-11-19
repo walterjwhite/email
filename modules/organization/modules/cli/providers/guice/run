@@ -1,0 +1,28 @@
+#!/bin/bash
+
+_SUSPEND=y
+if [ "$#" -gt "0" ]
+then
+	_SUSPEND=$1
+	shift
+fi
+
+_JAR=$(find target -maxdepth 1 -type f | grep \\.jar$ | grep -Pv "(sources|javadoc)")
+
+_IV_PATH=$(cat ./iv.file.path.secret)
+_KEY_PATH=$(cat ./key.file.path.secret)
+_EMAIL_RULE_PATH=$(cat ./email.filter.rules.path.secret)
+_EMAIL_RULE_EXTENSION=.yaml
+_EMAIL_ACCOUNT_EXTENSION=.yaml
+_CLEANUP_TYPE=Both
+#_CLEANUP_TYPE=SinglePass
+_RUN_AS=$(cat ./run.as.secret)
+
+$_RUN_AS "java -agentlib:jdwp=transport=dt_socket,server=y,suspend=$_SUSPEND,address=5005 \
+ -jar $_JAR \
+ -IVFilePath $_IV_PATH -KeyFilePath $_KEY_PATH\
+ -EmailRulePath $_EMAIL_RULE_PATH -EmailRuleExtension $_EMAIL_RULE_EXTENSION\
+ -EmailOrganizationSessionConfigurationDirectory $_EMAIL_RULE_PATH\
+ -EmailAccountExtension $_EMAIL_ACCOUNT_EXTENSION \
+ -CleanupType $_CLEANUP_TYPE" \
+  2> log

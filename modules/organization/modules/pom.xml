@@ -7,17 +7,12 @@
     <version>0.0.17-SNAPSHOT</version>
   </parent>
   <groupId>com.walterjwhite.java.modules.email.modules.organization</groupId>
-  <artifactId>plugins</artifactId>
+  <artifactId>modules</artifactId>
   <packaging>pom</packaging>
-  <name>email - modules - organization - plugins</name>
-  <description>email modules - organization - plugins</description>
+  <name>email - modules - organization - modules</name>
+  <description>email modules - organization - modules</description>
   <modules>
-    <module>count</module>
-    <module>craigslist-link-clicker</module>
-    <module>index</module>
-    <module>mark-as-read</module>
-    <module>move</module>
-    <module>reply</module>
+    <module>cli</module>
   </modules>
   <dependencies>
     <dependency>
