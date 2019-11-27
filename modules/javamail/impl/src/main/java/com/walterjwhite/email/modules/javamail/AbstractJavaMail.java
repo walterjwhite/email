@@ -4,8 +4,10 @@ import com.walterjwhite.email.api.model.PrivateEmailAccount;
 import com.walterjwhite.logging.annotation.LogStackTrace;
 import javax.mail.MessagingException;
 import javax.mail.Store;
+import lombok.Getter;
 
 // @RequiredArgsConstructor
+@Getter
 public abstract class AbstractJavaMail implements AutoCloseable {
   protected transient PrivateEmailAccount privateEmailAccount;
   protected transient Store store;

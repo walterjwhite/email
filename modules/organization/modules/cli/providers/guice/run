@@ -1,6 +1,6 @@
 #!/bin/bash
 
-_SUSPEND=y
+_SUSPEND=n
 if [ "$#" -gt "0" ]
 then
 	_SUSPEND=$1

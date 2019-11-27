@@ -59,6 +59,10 @@ public class EmailAccountConfigurer {
       final List<EmailAccountRules> emailAccounts,
       final File rootDirectory,
       final File absoluteRootDirectory) {
+    if (!rootDirectory.exists()) {
+      throw new RuntimeException("Root Directory does ! exist: " + rootDirectory);
+    }
+
     for (final File file : rootDirectory.listFiles()) {
       if (file.isDirectory()) {
         if (!RULES_NAME.equals(file.getName())) {

@@ -16,21 +16,25 @@ public class JavaMailEmailMessageMover extends AbstractJavaMail implements MoveA
       final String folderName,
       final PrivateEmailAccount privateEmailAccount,
       EmailMatcherRule emailMatcherRule,
-      Email email) {
+      Email email)
+      throws MessagingException {
     try {
       initialize(privateEmailAccount);
-    } catch (MessagingException e) {
-      throw new RuntimeException("Error initializing javamail email mover", e);
+      move(folderName, privateEmailAccount, emailMatcherRule, email);
+    } finally {
+      close();
     }
+  }
 
+  protected void move(
+      final String folderName,
+      final PrivateEmailAccount privateEmailAccount,
+      EmailMatcherRule emailMatcherRule,
+      Email email) {
     final Message message = JavaMailEmailMessageMarkAsRead.getMessage(store, folderName, email);
 
     try (final Folder source = message.getFolder()) {
-      if (source.isOpen()) {
-        source.close();
-      }
-
-      source.open(Folder.READ_WRITE);
+      openSourceFolder(source);
 
       try (final Folder target = mkdir(privateEmailAccount, getTargetFolderId(emailMatcherRule))) {
         target.open(Folder.READ_WRITE);
@@ -41,6 +45,14 @@ public class JavaMailEmailMessageMover extends AbstractJavaMail implements MoveA
     } catch (MessagingException e) {
       throw new RuntimeException("Error moving email", e);
     }
+  }
+
+  protected void openSourceFolder(final Folder source) throws MessagingException {
+    if (source.isOpen()) {
+      source.close();
+    }
+
+    source.open(Folder.READ_WRITE);
   }
 
   protected void copy(final Message message, final Folder source, final Folder target)

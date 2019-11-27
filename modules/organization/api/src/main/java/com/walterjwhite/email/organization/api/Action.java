@@ -9,5 +9,6 @@ public interface Action {
       final String folderName,
       final PrivateEmailAccount privateEmailAccount,
       final EmailMatcherRule emailMatcherRule,
-      final Email email);
+      final Email email)
+      throws Exception;
 }

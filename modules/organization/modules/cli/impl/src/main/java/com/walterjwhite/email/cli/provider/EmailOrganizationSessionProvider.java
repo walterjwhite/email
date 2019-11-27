@@ -20,6 +20,7 @@ public class EmailOrganizationSessionProvider implements Provider<EmailOrganizat
     this.emailAccountConfigurer = emailAccountConfigurer;
     this.emailOrganizationSessionConfigurationDirectory =
         emailOrganizationSessionConfigurationDirectory;
+
     emailOrganizationSession =
         emailAccountConfigurer.load(emailOrganizationSessionConfigurationDirectory);
   }

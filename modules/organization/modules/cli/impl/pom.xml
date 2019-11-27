@@ -58,6 +58,12 @@
       <scope>runtime</scope>
     </dependency>
     <dependency>
+      <groupId>com.walterjwhite.java.modules.email.modules.organization.plugins</groupId>
+      <artifactId>craigslist-link-clicker</artifactId>
+      <version>0.0.17-SNAPSHOT</version>
+      <scope>runtime</scope>
+    </dependency>
+    <dependency>
       <groupId>com.walterjwhite.java.modules.email.modules.javamail</groupId>
       <artifactId>impl</artifactId>
       <version>0.0.17-SNAPSHOT</version>
